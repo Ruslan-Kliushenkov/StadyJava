@@ -1,3 +1,5 @@
+package ua.kliushenkov.hw1;
+
 import java.time.LocalDateTime;
 
 public class HomeNumOne {

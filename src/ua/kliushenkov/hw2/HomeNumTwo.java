@@ -1,3 +1,5 @@
+package ua.kliushenkov.hw2;
+
 import java.util.Scanner;
 
 
