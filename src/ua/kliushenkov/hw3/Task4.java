@@ -7,24 +7,27 @@ public class Task4 {
     public static void main(String[] args) {
         Random random = new Random();
         int a = random.nextInt(10);
-        randomGame(a);
+        System.out.println(randomGame(a));
     }
 
-    private static void randomGame(int a) {
+    private static String randomGame(int a) {
         Scanner input = new Scanner(System.in);
-        while ( true ){
-            System.out.println("Введите значение");
+
+        do{
+            System.out.println("Введите число");
             int b = input.nextInt();
             if (a > b){
+
                 System.out.println("Мало");
             }else if (a < b){
                 System.out.println("Много");
-
-            }else {
-                System.out.println("Bingo!");
-                break;
+            }else{
+                return "Bingo!";
             }
+        }while (true);
+
+
         }
 
     }
-}
+
