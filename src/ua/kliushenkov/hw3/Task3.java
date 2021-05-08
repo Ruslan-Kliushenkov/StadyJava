@@ -12,6 +12,14 @@ public class Task3 {
 
     private static int wordCounter(String text) {
         String[] redact = text.split(" ");
-        return redact.length;
+        int count = redact.length;
+        for (String s : redact) {
+            if (s.matches("\\d+")) {
+                count--;
+
+            }
+        }
+        return count;
+
     }
 }
