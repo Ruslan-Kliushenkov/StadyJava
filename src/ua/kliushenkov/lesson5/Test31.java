@@ -2,7 +2,7 @@ package ua.kliushenkov.lesson5;
 
 import java.util.Arrays;
 import java.util.Random;
-
+//Самостоятельно
 public class Test31 {
     public static void main(String[] args) {
         int[] numbers = new int[20];
