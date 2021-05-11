@@ -21,7 +21,7 @@ public class Task2 {
         for(int i=0; i < mass.length; i++) {
             if(mass[i] > 0) {
                 boolean simpleNum = true;
-                for (int j = 2; j <= mass[i]/j ; j++) {  //mass[i]/j для оптимизации(по факту прохождения половины числа - дальнейшее вычисление не имеет смысла)
+                for (int j = 2; j <= mass[i]/j ; j++) {
                     if ((mass[i] % j == 0) && (mass[i] != 2)) simpleNum = false;
                 }
                 if (simpleNum) count++;
