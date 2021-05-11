@@ -16,7 +16,7 @@ public class Test31 {
     }
 
     private static int findMaxValue(int[] numbers){
-        int maxValue = numbers[0];
+        int maxValue = -1;
         for (int number : numbers) {
             if ((maxValue < number) && checkCondition(number)) {
                 maxValue = number;
