@@ -18,7 +18,7 @@ public class TaskOne {
         for (int i = 0; i < mass.length; i++) {
             for (int j = i + 1; j < mass.length; j++) {
                 if (mass[i] != 0) {
-                    if (mass[i] == mass[j] && mass[j] != 0) {
+                    if (mass[i] == mass[j]) {
                         calc++;
                         mass[j] = 0;
                     }
