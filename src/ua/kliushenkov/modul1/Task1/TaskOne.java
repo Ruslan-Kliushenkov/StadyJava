@@ -1,9 +1,11 @@
 package ua.kliushenkov.modul1.Task1;
 
+import java.util.Arrays;
+
 public class TaskOne {
     public static void main(String[] args) {
-        int[] array = {1, 1, 3, 3, 5, 5, 7, 7, 8, 8, 0, 0, -1, -1, -1, 0};
-        System.out.println(calcUniNum(array));
+        int[] array = {-1, 1, 1, 2, 2, 3, 4, -5, -5, 0, 0, -1, -1, -1, -1, -1, 2, 2};
+        System.out.println(calcUniNum(Arrays.copyOf(array, array.length)));
     }
 
     protected static int calcUniNum(int[] mass) {
